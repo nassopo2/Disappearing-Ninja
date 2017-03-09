@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title> The Ninja Page </title>
+  </head>
+
+    <body>
+
+            {% if color == "blue": %}
+              <img src='{{url_for('static',filename='img/blue.jpg')}}'>
+            {% elif color =="orange": %}
+              <img src='{{url_for('static',filename='img/orange.jpg')}}'>
+            {% elif color =="red": %}
+              <img src='{{url_for('static',filename='img/red.jpg')}}'>
+            {% elif color =="purple": %}
+              <img src='{{url_for('static',filename='img/purple.jpg')}}'>
+            {% elif color =="all": %}
+              <img src='{{url_for('static',filename='img/ninja.png')}}'>
+            {% else: %}
+                <img src='{{url_for('static',filename='img/meganfoxx.jpg')}}'>
+            {% endif %}
+
+
+    </body>
+
+
+
+
+</html>
